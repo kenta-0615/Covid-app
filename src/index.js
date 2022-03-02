@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const element = React.createElement('h1', null, 'Hello world');
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-    element,
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
     document.getElementById('root')
 );

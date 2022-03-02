@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+//App.js
+
+import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import countriesJson from "./countries.json";
+import TopPage from "./pages/TopPage";
+import WorldPage from "./pages/WorldPage";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [country, setCountry] = useState("japan");
+    const [countryData, setCountryData] = useState({
+        date: "",
+        newConfirmed: "",
+        totalConfirmed: "",
+        newRecovered: "",
+        totalRecovered: "",
+    });
+
+    const [allCountriesData, setAllCountriesData] = useState([]);
+
+
+        const getCountryData = () => {
+            fetch(`https://api.covid19api.com/country/${country}`)
+                .then(res => res.json())
+                .then(data => {
+                    setCountryData({
+                        date: data[data.length - 1].Date,
+                        newConfirmed: data[data.length - 2].Confirmed,
+                        totalConfirmed: data[data.length - 1].Confirmed,
+                        newRecovered: data[data.length - 2].Recovered,
+                        totalRecovered: data[data.length - 1].Recovered
+                    });
+                })
+        }
+
+    useEffect(() => {
+        fetch("https://reactbook-corona-tracker-api.herokuapp.com/summary")
+            .then(res => res.json())
+            .then(data => setAllCountriesData(data.Countries))
+}, [])
+
+    return (
+            <Routes>
+            <Route>
+                    <Route exact path="/" element={<TopPage countriesJson={countriesJson} setCountry={setCountry} countryData={countryData} />} />
+                    <Route exact path="/world" element={<WorldPage allCountriesData={allCountriesData} />} />
+            </Route>
+            </Routes>
+    );
 }
+
 
 export default App;
