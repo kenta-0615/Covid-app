@@ -10,7 +10,6 @@ const Results = (props) => {
             <p>新規感染者: <span>{props.countryData.newRecovered.toLocaleString()}</span></p>
             <p>回復者総数: <span>{props.countryData.totalRecovered.toLocaleString()}</span></p>
         </div>
-            }
             </div>
     );
 };
