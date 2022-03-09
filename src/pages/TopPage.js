@@ -11,8 +11,8 @@ const TopPage = (props) => {
         <div className="top-page-container">
             <Header />
             <Title />
-            <Selector countriesJson={props.countriesJson} setCountry={props.setCountry} />
-            <Results countryData={props.countryData} loading={props.loading} />
+            <Selector countriesJson={props.countriesJson} setCountry={props.setCountry} getCountryData={props.getCountryData} />
+            <Results countryData={props.countryData} />
         </div>
     );
 };
