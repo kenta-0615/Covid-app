@@ -1,24 +1,23 @@
 # Covid-App
 
-＊Covid-App は、世界中のどこでもコロナ感染状況が確認できるアプリケーションです。
+- Covid-App は、世界中のどこでもコロナ感染状況が確認できるアプリケーションです。
+
+#　目的
+
+- このアプリを使うことにより、世界中のどこにいても自分の国の感染者数を確認して帰省できる状況なのかなど早く確認ができる。
 
 # スタック
 
 ＊Node.js
 *JavaScript
 *React.js
-\*HTML
-＊CSS
 
 # 環境構築
 
-\*create-react-app
-
--
+- create-react-app
+- yarn install
 
 # Requirement
-
-_npm start_
 
 - react ^17.0.2
 - react-dom ^17.0.2
@@ -43,18 +42,6 @@ On Your Network: http://172.20.10.2:3000
 
 # Author
 
-作成情報を列挙する
-
-- 作成者
-- 所属
-- E-mail
-
-# License
-
-ライセンスを明示する
-
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
+- 笠井　健太
+- 無所属
+- ka.k.miwa@gamil.com
