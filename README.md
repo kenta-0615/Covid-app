@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Covid-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+＊Covid-App は、世界中のどこでもコロナ感染状況が確認できるアプリケーションです。
 
-## Available Scripts
+# スタック
 
-In the project directory, you can run:
+＊Node.js
+*JavaScript
+*React.js
+\*HTML
+＊CSS
 
-### `npm start`
+# 環境構築
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+\*create-react-app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-
 
-### `npm test`
+# Requirement
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_npm start_
 
-### `npm run build`
+- react ^17.0.2
+- react-dom ^17.0.2
+- react-router-dom ^6.2.1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_create-react-app_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_npm install react-router-dom@6_
 
-### `npm run eject`
+_npm install react react-dom_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Local: http://localhost:3000
+On Your Network: http://172.20.10.2:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Note
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+注意点などがあれば書く
 
-## Learn More
+# Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+作成情報を列挙する
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 作成者
+- 所属
+- E-mail
 
-### Code Splitting
+# License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ライセンスを明示する
 
-### Analyzing the Bundle Size
+"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+社内向けなら社外秘であることを明示してる
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"hoge" is Confidential.
