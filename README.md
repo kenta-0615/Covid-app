@@ -2,15 +2,15 @@
 
 - Covid-App は、世界中のどこでもコロナ感染状況が確認できるアプリケーションです。
 
-#　目的
+# 目的
 
 - このアプリを使うことにより、世界中のどこにいても自分の国の感染者数を確認して帰省できる状況なのかなど早く確認ができる。
 
 # スタック
 
-＊Node.js
-*JavaScript
-*React.js
+- Node.js
+- JavaScript
+- React.js
 
 # 環境構築
 
@@ -35,10 +35,6 @@ _npm install react react-dom_
 
 Local: http://localhost:3000
 On Your Network: http://172.20.10.2:3000
-
-# Note
-
-注意点などがあれば書く
 
 # Author
 
